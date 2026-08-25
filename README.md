@@ -25,25 +25,45 @@ The skill is plain markdown and works with any agent that loads SKILL.md style s
 
 ## Install
 
-First get the files. Clone the repo:
+You need two things: the skill folder (it must be named web-security-tats) and your agent's skills folder.
 
-    git clone https://github.com/tatsbytats/web-security-tats.git
+Step 1. Get the files. Do one of these:
+- Clone the repo:
+      git clone https://github.com/tatsbytats/web-security-tats.git
+- Or download the ZIP from the GitHub repo and unzip it.
 
-Or download the ZIP from the repo and unzip it. The folder you need is web-security-tats.
+Step 2. Copy the web-security-tats folder into your agent's skills folder. Pick the command for your system.
 
-Then copy that folder into your agent skills directory. Example for Claude Code:
+macOS or Linux (Terminal):
 
     cp -r web-security-tats ~/.claude/skills/
 
-Example for opencode:
+Windows (Command Prompt):
 
-    cp -r web-security-tats ~/.config/opencode/skills/
+    xcopy /E /I web-security-tats %USERPROFILE%\.claude\skills\web-security-tats
 
-One line option (clone and install for Claude Code):
+Windows (PowerShell):
 
-    git clone https://github.com/tatsbytats/web-security-tats.git /tmp/web-security-tats && cp -r /tmp/web-security-tats ~/.claude/skills/web-security-tats
+    Copy-Item -Recurse web-security-tats $HOME\.claude\skills\web-security-tats
 
-Restart the agent after adding the skill. It triggers automatically on web app security, build, and review tasks.
+Git Bash (any OS):
+
+    cp -r web-security-tats ~/.claude/skills/
+
+One line, clone and install, per system:
+
+macOS or Linux / Git Bash:
+    git clone https://github.com/tatsbytats/web-security-tats.git && cp -r web-security-tats ~/.claude/skills/
+
+Windows Command Prompt:
+    git clone https://github.com/tatsbytats/web-security-tats.git && xcopy /E /I web-security-tats %USERPROFILE%\.claude\skills\web-security-tats
+
+Other agents: replace ~/.claude/skills/ with the right path.
+- opencode: ~/.config/opencode/skills/
+- Codex or ChatGPT agents: ~/.agents/skills/
+- Cursor: copy SKILL.md into .cursor/rules/ as web-security-tats.mdc
+
+Step 3. Restart your agent. The skill triggers automatically on web app security, build, and review tasks.
 
 ## Usage
 
