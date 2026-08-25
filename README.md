@@ -25,45 +25,25 @@ The skill is plain markdown and works with any agent that loads SKILL.md style s
 
 ## Install
 
-You need two things: the skill folder (it must be named web-security-tats) and your agent's skills folder.
+Pick your agent and run its one command. It clones the repo and drops the skill into the right folder.
 
-Step 1. Get the files. Do one of these:
-- Clone the repo:
-      git clone https://github.com/tatsbytats/web-security-tats.git
-- Or download the ZIP from the GitHub repo and unzip it.
+Claude Code:
 
-Step 2. Copy the web-security-tats folder into your agent's skills folder. Pick the command for your system.
-
-macOS or Linux (Terminal):
-
-    cp -r web-security-tats ~/.claude/skills/
-
-Windows (Command Prompt):
-
-    xcopy /E /I web-security-tats %USERPROFILE%\.claude\skills\web-security-tats
-
-Windows (PowerShell):
-
-    Copy-Item -Recurse web-security-tats $HOME\.claude\skills\web-security-tats
-
-Git Bash (any OS):
-
-    cp -r web-security-tats ~/.claude/skills/
-
-One line, clone and install, per system:
-
-macOS or Linux / Git Bash:
     git clone https://github.com/tatsbytats/web-security-tats.git && cp -r web-security-tats ~/.claude/skills/
 
-Windows Command Prompt:
-    git clone https://github.com/tatsbytats/web-security-tats.git && xcopy /E /I web-security-tats %USERPROFILE%\.claude\skills\web-security-tats
+opencode:
 
-Other agents: replace ~/.claude/skills/ with the right path.
-- opencode: ~/.config/opencode/skills/
-- Codex or ChatGPT agents: ~/.agents/skills/
-- Cursor: copy SKILL.md into .cursor/rules/ as web-security-tats.mdc
+    git clone https://github.com/tatsbytats/web-security-tats.git && cp -r web-security-tats ~/.config/opencode/skills/
 
-Step 3. Restart your agent. The skill triggers automatically on web app security, build, and review tasks.
+Codex or ChatGPT agents:
+
+    git clone https://github.com/tatsbytats/web-security-tats.git && cp -r web-security-tats ~/.agents/skills/
+
+Cline, Roo Code, Kilo Code, and Windsurf also read the Claude Code skill format, so the Claude Code command above works for them too (use their configured skills path if different).
+
+Windows note: in Command Prompt replace the `cp -r web-security-tats DEST` part with `xcopy /E /I web-security-tats DEST`.
+
+Restart your agent after installing. The skill triggers automatically on web app security, build, and review tasks.
 
 ## Usage
 
