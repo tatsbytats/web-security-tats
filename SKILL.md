@@ -5,7 +5,7 @@ description: >
   deployment. Distills the essential web-security mindset, the OWASP Top 10,
   concrete "never do this" rules, a layered secure architecture, and a concrete
   audit workflow an AI coding agent can run. Agent-agnostic (Claude Code,
-  opencode, Codex, Cursor, etc.).
+  opencode, Codex, Cursor, etc.)
 ---
 
 # Full-Stack Web Security (essentials)

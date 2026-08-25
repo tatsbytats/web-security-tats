@@ -1,4 +1,4 @@
-# web-security-tats
+# web-security-tats 
 
 An agent-agnostic security skill for AI coding assistants. It distills the essential full-stack web application security knowledge into guidance an AI agent can apply when building, reviewing, or hardening web apps, APIs, and deployments.
 
