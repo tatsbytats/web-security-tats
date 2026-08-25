@@ -1,8 +1,9 @@
 # web-security-tats 
 
+I am new to AI assisted development and found it hard to secure a website with AI help. This skill is meant to help other developers secure their web apps. I am tats, happy building.
+
 An agent-agnostic security skill for AI coding assistants. It distills the essential full-stack web application security knowledge into guidance an AI agent can apply when building, reviewing, or hardening web apps, APIs, and deployments.
 
-I am new to AI assisted development and found it hard to secure a website with AI help. This skill is meant to help other developers secure their web apps. I am tats, happy building.
 
 ## What it covers
 
