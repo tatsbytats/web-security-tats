@@ -25,13 +25,23 @@ The skill is plain markdown and works with any agent that loads SKILL.md style s
 
 ## Install
 
-Copy the folder into your agent skills directory. Example for Claude Code:
+First get the files. Clone the repo:
+
+    git clone https://github.com/tatsbytats/web-security-tats.git
+
+Or download the ZIP from the repo and unzip it. The folder you need is web-security-tats.
+
+Then copy that folder into your agent skills directory. Example for Claude Code:
 
     cp -r web-security-tats ~/.claude/skills/
 
 Example for opencode:
 
     cp -r web-security-tats ~/.config/opencode/skills/
+
+One line option (clone and install for Claude Code):
+
+    git clone https://github.com/tatsbytats/web-security-tats.git /tmp/web-security-tats && cp -r /tmp/web-security-tats ~/.claude/skills/web-security-tats
 
 Restart the agent after adding the skill. It triggers automatically on web app security, build, and review tasks.
 
